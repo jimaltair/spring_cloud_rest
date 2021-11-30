@@ -1,0 +1,3 @@
+## получаем список вопросов и ответов заданным размером
+
+GET http://localhost:8080/api/questions?amount=10

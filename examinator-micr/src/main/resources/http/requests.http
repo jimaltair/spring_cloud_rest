@@ -1,0 +1,9 @@
+### получаем список вопросов по запрошенным дисциплинам заданного размера
+
+POST http://localhost:8082/exam
+Content-Type: application/json
+
+{
+  "MATH": "5",
+  "history": 2
+}

@@ -1,0 +1,29 @@
+### получаем список вопросов и ответов заданным размером
+GET http://localhost:8081/api/questions?amount=2
+
+### вносим в базу 1-ый вопрос
+POST http://localhost:8081/questions
+Content-Type: application/json
+
+{
+  "question": "вопрос 1",
+  "answer": "ответ 1"
+}
+
+### вносим в базу 2-ой вопрос
+POST http://localhost:8081/questions
+Content-Type: application/json
+
+{
+  "question": "вопрос 2",
+  "answer": "ответ 2"
+}
+
+### получаем по id-шнику вопрос №1 и т.д.
+GET http://localhost:8081/questions/1
+
+###
+GET http://localhost:8081/questions/2
+
+###
+GET http://localhost:8081/questions/3
